@@ -2,51 +2,61 @@
   {
     "id": 1,
     "name": "product-1",
+    "category": "breakfast",
     "price": 200
   },
   {
     "id": 2,
     "name": "product-2",
+    "category": "lunch",
     "price": 200
   },
   {
     "id": 3,
     "name": "product-3",
+    "category": "dinner",
     "price": 200
   },
   {
     "id": 4,
     "name": "product-4",
+    "category": "breakfast",
     "price": 200
   },
   {
     "id": 5,
     "name": "product-5",
+    "category": "lunch",
     "price": 200
   },
   {
     "id": 6,
     "name": "product-6",
+    "category": "dinner",
     "price": 200
   },
   {
     "id": 7,
     "name": "product-7",
+    "category": "breakfast",
     "price": 200
   },
   {
     "id": 8,
     "name": "product-8",
+    "category": "lunch",
     "price": 200
   },
   {
     "id": 9,
     "name": "product-9",
+    "category": "dinner",
     "price": 200
   },
   {
     "id": 10,
     "name": "product-10",
+    "category": "breakfast",
     "price": 200
   }
 ]

@@ -40,7 +40,8 @@ export const ShoppingCartProvider = ({
 
   const increaseCartQuantity = (id: number) => {
     setCartItems((currItems) => {
-      if (currItems.find((item) => item.id === id) == null) {
+      const notInCart = currItems.find((item) => item.id === id) == null;
+      if (notInCart) {
         return [...currItems, { id, quantity: 1 }];
       } else {
         return currItems.map((item) => {
@@ -56,15 +57,15 @@ export const ShoppingCartProvider = ({
 
   const decreaseCartQuantity = (id: number) => {
     setCartItems((currItems) => {
-      if (currItems.find((item) => item.id === id)?.quantity === 1) {
+      const isInCart = currItems.find((item) => item.id === id)?.quantity === 1;
+      if (isInCart) {
         return currItems.filter((item) => item.id !== id);
       } else {
         return currItems.map((item) => {
           if (item.id === id) {
             return { ...item, quantity: item.quantity - 1 };
-          } else {
-            return item;
           }
+          return item;
         });
       }
     });

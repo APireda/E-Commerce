@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  max-width: 300px;
   background-color: black;
   color: white;
   width: 80%;
